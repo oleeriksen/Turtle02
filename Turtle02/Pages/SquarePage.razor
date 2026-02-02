@@ -1,0 +1,59 @@
+﻿@page "/square"
+@using TurtleApp.Model
+@using TurtleApp.Drawings
+
+
+<PageTitle>Square</PageTitle>
+
+<h1>Square - with Turtle</h1>
+
+<button class="btn btn-primary" @onclick="Decrement">-</button>
+<button class="btn btn-secondary">@level</button>
+<button class="btn btn-primary" @onclick="Increment">+</button>
+
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+
+
+    @foreach (var line in mLines)
+    {
+        <line x1="@line.X1" y1="@line.Y1" x2="@line.X2" y2="@line.Y2" stroke="@line.Color" stroke-width="@line.Width" />
+    }
+</svg>
+No of lines: @mLines.Count
+@code {
+
+    private int level = 3;
+
+    List<Line> mLines = new();
+
+    protected override void OnInitialized()
+    {
+        CreateNewDrawing();
+    }
+
+    private void CreateNewDrawing()
+    {
+        var t = new Turtle();
+        t.Up();
+        t.MoveTo(0, 550);
+        t.Down();
+        SquareDrawing drawing = new();
+        drawing.DrawSquare(t, 900, level);
+        mLines = t.mLines;
+    }
+
+    private void Decrement()
+    {
+        level--;
+        CreateNewDrawing();
+    }
+
+    private void Increment()
+    {
+        level++;
+        CreateNewDrawing();
+    }
+
+
+}
+

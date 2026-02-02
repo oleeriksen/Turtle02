@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turtle02", "Turtle02\Turtle02.csproj", "{437BE7C9-0029-4786-901D-0726BE2F1968}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{437BE7C9-0029-4786-901D-0726BE2F1968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437BE7C9-0029-4786-901D-0726BE2F1968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437BE7C9-0029-4786-901D-0726BE2F1968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437BE7C9-0029-4786-901D-0726BE2F1968}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
