@@ -1,4 +1,4 @@
-﻿namespace TurtleApp.Model
+﻿namespace Turtle02.Model
 {
     public interface ITurtle
     {

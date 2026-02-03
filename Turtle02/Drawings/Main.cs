@@ -1,7 +1,7 @@
 ﻿using System;
-using TurtleApp.Model;
+using Turtle02.Model;
 
-namespace TurtleApp.Drawings
+namespace Turtle02.Drawings
 {
     public class Main
     {

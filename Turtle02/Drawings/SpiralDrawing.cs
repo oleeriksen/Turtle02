@@ -1,6 +1,6 @@
 ﻿using System;
-using TurtleApp.Model;
-namespace TurtleApp.Drawings
+using Turtle02.Model;
+namespace Turtle02.Drawings
 {
     public class SpiralDrawing
     {

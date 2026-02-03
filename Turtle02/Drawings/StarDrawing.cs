@@ -1,7 +1,7 @@
 ﻿using System;
-using TurtleApp.Model;
+using Turtle02.Model;
 
-namespace TurtleApp.Drawings
+namespace Turtle02.Drawings
 {
 	public class StarDrawing
 	{
@@ -18,6 +18,26 @@ namespace TurtleApp.Drawings
             t.TurnTo(0);
             t.Down();
             t.Width = 2;
+           
+            for (int i = 0; i < 36; i++)
+            {           
+                t.Move(size);
+                t.Up();
+                t.MoveTo(cx, cy);
+                t.Turn(10);
+                t.Down();
+            }
+        }
+        
+        
+        private void DrawOneStar(ITurtle t, double size, double cx, double cy, string color)
+        {
+            t.Color = color;
+            t.Up();
+            t.MoveTo(cx, cy);
+            t.TurnTo(0);
+            t.Down();
+            t.Width = 1;
            
             for (int i = 0; i < 36; i++)
             {           
@@ -49,25 +69,6 @@ namespace TurtleApp.Drawings
                 int randomIdx = r.Next(colors.Length);
                 string randomColor = colors[randomIdx];
                 DrawOneStar(t, size, cx, cy, randomColor);
-            }
-        }
-        
-        private void DrawOneStar(ITurtle t, double size, double cx, double cy, string color)
-        {
-            t.Color = color;
-            t.Up();
-            t.MoveTo(cx, cy);
-            t.TurnTo(0);
-            t.Down();
-            t.Width = 1;
-           
-            for (int i = 0; i < 36; i++)
-            {           
-                t.Move(size);
-                t.Up();
-                t.MoveTo(cx, cy);
-                t.Turn(10);
-                t.Down();
             }
         }
     }

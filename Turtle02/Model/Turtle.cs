@@ -1,5 +1,5 @@
 ﻿using System;
-namespace TurtleApp.Model
+namespace Turtle02.Model
 {
     public class Turtle : ITurtle
     {
